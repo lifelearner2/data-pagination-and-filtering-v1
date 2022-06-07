@@ -42,7 +42,7 @@ function showPage(list, page) {
                   </div>
                </li> `
                  
-                 insertAdjacentHTML(beforeend, studentItem);
+                 studentList.insertAdjacentHTML(beforeend.studentItem);
                  showPage(data1);
                   //showPage(data1);
                 
