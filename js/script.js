@@ -26,27 +26,32 @@ function showPage(list, page) {
    for ( let i = 0; i < list.length; i++) {
       if (i >= startIndex && i < endIndex) {
          
-        let studentItem = `li class ="student-item cf"
-         <div class="student-details">
-           <><img class="avatar" src="https://randomuser.me/api/portraits/women/25.jpg" alt="Profile Picture">
-               <h3>Ethel Dean</h3>
-               <span class="email">ethel.dean@example.com</span>
-            </div><div class="joined-details">
-                  <span class="date">Joined 12-15-2005</span>
-               </div></>
-       </li>
-     </ul>
+        li ="student-item cf";
+        let studentItem ="student-details" (`img class="avatar" src="js.data.js" alt="Profile, Picture`)
+        let h3 = "Name";
+        span_class="email";
+        div = "data";
+        div_class="joined-details";
+        span_lass="date";
+        div
+        li
+
+         showPage[data];
+
+     
  
    //   <div class="pagination">
    //     <ul class="link-list">`    
-   return studentItem;
+   //return studentItem;
+   return showPage;
 
       }
         ;
   
 };
-} 
+};
 showPage(data);
+
    
   
   
