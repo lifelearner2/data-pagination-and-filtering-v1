@@ -24,13 +24,34 @@ function showPage(list, page) {
   
   studentList.innerHTML = ('');
    for ( let i = 0; i < list.length; i++) {
-      if (i >= startIndex, i < endIndex);
-   }
+      if (i >= startIndex && i < endIndex) {
+         
+        let studentItem = `li class ="student-item cf"
+         <div class="student-details">
+           <><img class="avatar" src="https://randomuser.me/api/portraits/women/25.jpg" alt="Profile Picture">
+               <h3>Ethel Dean</h3>
+               <span class="email">ethel.dean@example.com</span>
+            </div><div class="joined-details">
+                  <span class="date">Joined 12-15-2005</span>
+               </div></>
+       </li>
+     </ul>
+ 
+   //   <div class="pagination">
+   //     <ul class="link-list">`    
+   return studentItem;
+
+      }
+        ;
+  
 };
-     
+} 
+showPage(data);
    
   
   
+
+
 
 
 
