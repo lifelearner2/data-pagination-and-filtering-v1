@@ -25,35 +25,46 @@ function showPage(list, page) {
   studentList.innerHTML = ('');
    for ( let i = 0; i < list.length; i++) {
       if (i >= startIndex && i < endIndex) {
-         
-        li ="student-item cf";
-        let studentItem ="student-details" (`img class="avatar" src="js.data.js" alt="Profile, Picture`)
-        let h3 = "Name";
-        span_class="email";
-        div = "data";
-        div_class="joined-details";
-        span_lass="date";
-        div
-        li
+            ` <li class="student-item cf">
+            <div class="student-details">
+            <img class="avatar" src= ${"picture"} ${alt="Profile Picture"}>
+            <h3>${name}</h3>
+            <span class=${"email"}></span>
+            </div>
+            <div class=${"joined-details"}>
+            <span class=${"date"}>Joined</span>
+            </div>
+         </li> `
+            // insertAdjacentHTML beforeend 
+      
+      
+      };
+
+      //   li ="student-item cf";
+      //   let studentItem ="student-details" (`img class="avatar" src="js.data.js" alt="Profile, Picture`)
+      //   let h3 = "Name";
+      //   span_class="email";
+      //   div = "data";
+      //   div_class="joined-details";
+      //   span_lass="date";
+        //div
+        //li
 
          showPage[data];
-
-     
  
    //   <div class="pagination">
    //     <ul class="link-list">`    
    //return studentItem;
-   return showPage;
-
-      }
-        ;
+   //return showPage;
+   //return (data);
+      };
+        
   
 };
-};
+//};
 showPage(data);
-
-   
   
+//console.log(data);
   
 
 
