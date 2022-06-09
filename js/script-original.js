@@ -56,59 +56,83 @@ showPage(data, 1);
 Create the `addPagination` function
 This function will create and insert/append the elements needed for the pagination buttons
 */
-
-function addPagination(list) {
-
-
+//function addPagination(list) {
    // create a variable to calculate the number of pages needed
-   const numOfPages = Math.ceil(list.length/9);
-   
+ 
    // select the element with a class of `link-list` and assign it to a variable
-   const linkList = document.querySelector(".link-list");
-   //console.log(linkList);
+ 
    // set the innerHTML property of the variable you just created to an empty string
-   
-   linkList.innerHTML = "";
-
-   //linkList.innerHTML = `<li>Jeanene is awesome</li>`
-
+ 
    // loop over the number of pages needed
-   for (let i = 1; i <= numOfPages; i++) {
-      
-      // create the elements needed to display the pagination button
-     // insert the above elements 
-    let button = `<li> 
-                        <button type="button">${i}</button>
-                  </li>`;
-    linkList.insertAdjacentHTML("beforeend", button);
-      
-   }
+     // create the elements needed to display the pagination button
+     // insert the above elements
  
    // give the first pagination button a class of "active"
  
    // create an event listener on the `link-list` element
-
      // if the click target is a button:
        // remove the "active" class from the previous button
-
-
        // add the active class to the clicked button
-
-
-       // call the showPage function passing the `list` parameter and page
-       // showPage(list, page);
-      
-
+       // call the showPage function passing the `list` parameter and page to display as arguments
  }
 
-    
+function addPagination(list) {
+      const numOfPages = 5;
+      const button = ("Next Page");
+
+      for (let i = 1; i <= numOfPages; i++) {
+            `<li>
+            <button type="button">1</button>
+            </li>
+               linkList.insertAdjacentHTML('beforeend', button);
+            <li>
+                <button type="firstButton" class="active">${button[i].firstPage}</button>
+            </li>
+            <li>
+                 <button type="button">${button[i].nextPage}</>
+            </li>` 
+               document.querySelector(".className")
+               numOfPages = Math.ceil(list.length, numOfPages ++, 9);{
+                  const linkList = document.querySelector(".link-list");
+                  document.getElementById("link-list").innerHTML("button");
+                  linkList.innerHTML = "";
+      }
+   
+         linkList.addEventListener("click", (e) => {
+            const nextPage =
+            `<li>
+            <button type="button" class="active">${button[i].firstButton}</button>
+            </li>
+            <li>
+            <button type="button">${button[i].nextPage}</>
+            </li>` 
+           
+            if (click.target.ul = button) {
+               document.querySelector(".className = active")
+               className = '';
+               document.querySelector(".className.click.target = active")
+               document.querySelector("remove active class from previous button")
+               showPage(list.textContent);
+               addPagination(data);
+               showPage(data, 1)
+               showPage(list, 1);
+            };
+        
+         //let btn = document.createElement("button");
+         //console.log(list);
+          });
+
+     
+            //removeEventListener()
+
+        };        
       
-      
+      };
    
 // Call functions
 
 showPage(data, 1);
-addPagination(data);
+//addPagination(data);
 
    
-//console.log(data); 
+console.log(data); 
