@@ -82,12 +82,16 @@ function addPagination(list) {
                         <button type="button">${i}</button>
                         </li>`;   
    // create an event listener on the `link-list` element
-   // if the click target is a button:
+   // check if the clicked element is a button:
    linkList.insertAdjacentHTML("beforeend", button);
    linkList.addEventListener("click", (e) => { 
-      if ('click'.target= firstButton)
-         document.querySelector.active;   
-        showPage(list);
+      if (e.target.tagName === "BUTTON")
+       //select active element
+         document.querySelector('.active'); 
+          // remove the "active" class from the previous button by adding .className = ""; above
+         //add active class to clicked button 
+         if (e.target.className = "active");
+        showPage(list, e.target.textContent);
 });        
       
    }
@@ -98,7 +102,7 @@ function addPagination(list) {
 addPagination(data);    
 //console.log(addEventListener);     
     
-       // remove the "active" class from the previous button
+     
 
 
        // add the active class to the clicked button
