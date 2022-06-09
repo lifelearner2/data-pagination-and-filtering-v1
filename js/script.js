@@ -39,8 +39,9 @@ function showPage(list, page) {
     </li>`
 //console.log(studentItem);
       studentList.insertAdjacentHTML('beforeend', studentItem);
-     
+    
     }
+  
   }
 }
 showPage(data, 1);
@@ -58,52 +59,45 @@ This function will create and insert/append the elements needed for the paginati
 */
 
 function addPagination(list) {
-
-
    // create a variable to calculate the number of pages needed
    const numOfPages = Math.ceil(list.length/9);
-   
-   // select the element with a class of `link-list` and assign it to a variable
+    // select the element with a class of `link-list` and assign it to a variable
    const linkList = document.querySelector(".link-list");
    //console.log(linkList);
-   // set the innerHTML property of the variable you just created to an empty string
-   
-   linkList.innerHTML = "";
-
-   //linkList.innerHTML = `<li>Jeanene is awesome</li>`
-
+  
+   // give the first pagination button a class of "active"
+   const firstButton = `<  type="button" class="active">
+                           document.querySelector("button${1}className = active")
+]                       <li>
+                           document.querySelector("button${2}")
+                        </li>`
+    // set the innerHTML property of the variable you just created to an empty string  
+    linkList.innerHTML = "";
+    //linkList.innerHTML = `<li>Jeanene is awesome</li>`                            
    // loop over the number of pages needed
    for (let i = 1; i <= numOfPages; i++) {
       // create the elements needed to display the pagination button
      // insert the above elements 
          let button = `<li> 
                         <button type="button">${i}</button>
-                        </li>`;
-    linkList.insertAdjacentHTML("beforeend", button);
-      
-   }
- 
-   // give the first pagination button a class of "active"
-   const firstButton = `< type="button" class="active">
-                              document.querySelector("button${1}className = active")`
-                           
-                              console.log(addPagination);
-
-                           `<li>
-                           document.querySelector("button${2}")
-                           </li>`
-
+                        </li>`;   
    // create an event listener on the `link-list` element
    // if the click target is a button:
+   linkList.insertAdjacentHTML("beforeend", button);
    linkList.addEventListener("click", (e) => { 
-         if ('click'.target= firstButton)
-            document.querySelector.active;
-
+      if ('click'.target= firstButton)
+         document.querySelector.active;   
+        showPage(list);
+});        
       
-   });
-         
-   //console.log(addEventListener);     
-     
+   }
+  
+                           //console.log(addPagination);
+                           console.log(list);
+}      
+addPagination(data);    
+//console.log(addEventListener);     
+    
        // remove the "active" class from the previous button
 
 
@@ -111,19 +105,14 @@ function addPagination(list) {
 
 
        // call the showPage function passing the `list` parameter and page
-       // showPage(list, page);
-      
+       
+       //showPage(list, page);
 
- }
-
-    
-   
-      
-   
+ //});  
 // Call functions
 
-showPage(data, 1);
-addPagination(data);
+//showPage(data, 1);
+
 
    
 //console.log(data); 
