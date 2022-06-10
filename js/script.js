@@ -91,7 +91,7 @@ function addPagination(list) {
                                                       //after I click a button. Also - remember that whenever you use "e.target === the next 
                                                       //word in quotes must be in ALL CAPS! If you put it in lower case you won't get 
                                                       //an error but it also will not be doing what it's supposed to be doing.
-         if (e.target.tagName === "BUTTON");
+         if (e.target.tagName === "BUTTON"){
                                                       //console.log(e.target.tagName);
                                                       //The console.log above will print the word BUTTON to the console whenever you click one of the buttons...
                                                       //but it must be in ALL CAPS. .tagName refers to pulling info from the HTML tag
@@ -103,7 +103,8 @@ function addPagination(list) {
                                                       //all still "active". The empty string is what removes the active state from the button when another button is pressed.
                                                       //add active class to clicked button 
          e.target.className = "active";               //This line of code made all the buttons work perfectly! Very important line of code right here!
-         showPage(list, e.target.textContent);        //This showPage function is being called from the addPagination function because it needs to access the event listener. 
+         showPage(list, e.target.textContent);    
+      }                                               //This showPage function is being called from the addPagination function because it needs to access the event listener. 
 });                                                   //the "text content" in this pagination function is referring to the actual text on the button like "1, 2, 3, 4, 5"
                                                       //console.log(list); log constantly
 }      
