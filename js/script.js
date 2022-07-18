@@ -24,7 +24,7 @@ function showPage(list, page) {
          studentList.innerHTML = "";
          for (let i = 0; i < list.length; i++) {
             if (i >= startIndex && i < endIndex) {                   //Always remember that the && represents the word "AND". HTML tags must be in a template literal with back tics
-               const studentItem =                                   //Must use ${} and dot notation for the elements that I changing to represent additional info or data.
+               const studentItem =                                    //Must use ${} and dot notation for the elements that I changing to represent additional info or data.
                `<li class="student-item cf">             
                 <div class="student-details">
                 <img class="avatar" src="${list[i].picture.medium}" alt="Profile Picture">
